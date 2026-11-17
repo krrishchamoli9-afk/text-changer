@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1 id="heading">Text changer</h1>
+       
+        
+
+        <div id="b" contenteditable="true">
+            Type your text here...
+        </div>
+        <br>
+
+        
+        <div id="main">
+            <div id="first">
+                <h1>choose background color</h1>
+                <div id="bg-color">
+                    <button onclick="BgColor('red')" style="background-color: red;"></button>
+                    <button onclick="BgColor('green')" style="background-color: green;"></button> 
+                    <button onclick="BgColor('blue')" style="background-color: blue;"></button>
+                    
+                   
+
+                </div>
+            </div>
+            
+            <div id="second">
+                <h1>choose background color</h1>
+                <div id="bg-color">
+                    <button onclick="textColor('red')" style="background-color: red;"></button>
+                    <button onclick="textColor('green')"style="background-color: green;"></button> 
+                    <button onclick="textColor('blue')"style="background-color: blue;"></button>
+                    <button onclick="textColor('black')"style="background-color: black;"></button>
+
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </center>
+    <script>
+        function BgColor(color){
+            document.getElementById("b").style.backgroundColor=color
+        }
+        function textColor(color){
+            document.getElementById("b").style.color=color
+        }
+         
+    </script>
+    
+</body>
+</html>
